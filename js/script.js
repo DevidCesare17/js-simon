@@ -18,10 +18,11 @@ function check (array, numero) {
   }
 }
 
+//RESTA VISUALIZZATO PER 5 SECONDI
 function remember () {
   document.getElementById("numeri_random").innerHTML = "";
 }
-setInterval(remember, 3000);
+setInterval(remember, 5000);
 
 var numeroComputer = [];
 do {
@@ -34,7 +35,7 @@ do {
 document.getElementById("numeri_random").innerHTML = numeroComputer;
 console.log(numeroComputer);
 
-
+//L'UTENTE DEVE DARE L'INPUT DOPO 30 SECONDI DALLA SCOMPARSA DEI NUMERI CASUALI
 function inserimento () {
   var conteggio = 0;
   var i = 0;
@@ -57,4 +58,4 @@ function inserimento () {
 
   alert("Hai indovinato " + conteggio + " numeri!" + "\n" + "I numeri che hai indovinato sono: " + numeriIndov);
 }
-setTimeout(inserimento, 5000);
+setTimeout(inserimento, 35000);
